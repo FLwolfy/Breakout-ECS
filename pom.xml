@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>CompSci308_2025Spring</groupId>
+    <artifactId>breakout_hl475</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <!-- set up name for repeated values to make it easy to change -->
+    <properties>
+        <project.build.java.version>21</project.build.java.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- compiles project source code using correct version and flags -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <encoding>iso-8859-1</encoding>
+                    <source>${project.build.java.version}</source>
+                    <target>${project.build.java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
