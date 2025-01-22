@@ -206,7 +206,12 @@ public class MenuScene extends GameScene {
 
   private void setLevels() {
     for (int i = 0; i < 2 * (highestLevel + 1); i++) {
-      Point2D position = new Point2D(-35 + 2 * (i / 2 % 2 - 0.5) * 16, 18 + (i / 4) * 10);
+      Point2D position = new Point2D(-35 + 2 * (i / 2 % 2 - 0.5) * 16, 18 + (i / 4) * 12);
+
+      if (i < levels.size()) {
+        levels.get(i).transform.position = new Point2D(position.getX() * uW, position.getY() * uH);
+        continue;
+      }
 
       // Button
       if (i % 2 == 0) {
@@ -312,11 +317,7 @@ public class MenuScene extends GameScene {
     optionBoardText.transform.position = new Point2D(-35 * uW, 85 * uH);
 
     // levels
-    for (int i = 0; i < levels.size(); i++) {
-      Point2D position = new Point2D(-35 + 2 * (i / 2 % 2 - 0.5) * 16, 18 + (i / 4) * 10);
-      UIWidget currentLevel = levels.get(i);
-      currentLevel.transform.position = new Point2D(position.getX() * uW, position.getY() * uH);
-    }
+    setLevels();
   }
 
 }

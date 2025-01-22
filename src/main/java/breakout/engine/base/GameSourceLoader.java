@@ -228,7 +228,7 @@ public class GameSourceLoader {
       properties.store(output, "Serialized Properties");
 
       // Store the object in the PROPERTIES map
-      loadSerializableProperty(name);
+      instance.PROPERTIES.put(name, obj);
     } catch (IOException e) {
       throw new RuntimeException("Cannot store the serialized properties: " + name, e);
     }
