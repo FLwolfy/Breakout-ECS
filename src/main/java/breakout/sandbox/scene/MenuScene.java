@@ -82,7 +82,7 @@ public class MenuScene extends GameScene {
     dukeLogo = instantiateObject(UIWidget.class);
     dukeLogo.isClickable = true;
     dukeLogo.transform.position = new Point2D(50 * uW, 30 * uH);
-    ImageView dukeImg = GameSourceLoader.getImage("DUKE_LOGO");
+     ImageView dukeImg = GameSourceLoader.getImage("DUKE_LOGO");
     dukeLogo.setImage(dukeImg);
     dukeLogo.transform.scale = new Point2D(50 * uW / dukeImg.getImage().getWidth() , 50 * uW / dukeImg.getImage().getHeight());
     PhysicsHandler dukeLogoPhysics = dukeLogo.attachComponent(PhysicsHandler.class);

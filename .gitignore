@@ -25,6 +25,7 @@ replay_pid*
 
 # Build files
 target/
+META-INF/
 
 # Local configuration files (sdk path, etc.)
 *.iml
@@ -92,5 +93,5 @@ Thumbs.db
 *.userosscache
 *.sln.docstates
 
-# User-specific files
+# User-data
 config.properties
