@@ -2,6 +2,10 @@
 
 ## **Overview**
 
+<div align="center">
+  <img src="preview.png" alt="Preview">
+</div>
+
 **Breakout** is a classic arcade game, reimagined with modern features, multiple levels, and a relatively usable physics system. This project implements the game using an Entity-Component-System (ECS) architecture, making the game highly extensible and allowing for advanced game logic, such as collisions and power-ups.
 
 ## **Key Features**
