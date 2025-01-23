@@ -7,7 +7,6 @@
 
     <!-- set up name for repeated values to make it easy to change -->
     <properties>
-        <app.name>Breakout ECS</app.name>
         <mainClass>breakout.sandbox.Main</mainClass>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.java.version>21</project.build.java.version>
